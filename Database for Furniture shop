@@ -1,0 +1,38 @@
+/** Furniture:
+Sofas (5)
+TVs (10)
+Tables (32)
+Trashcans (4)
+Chairs (24)
+Refrigerators (64)
+Microwaves (44)
+Stoves (3)
+Umbrellas (18)
+Lamps (23)
+Beds (4)
+Dishes (45)
+Cups(4)
+Glasses (78)
+Plants (8)
+**/
+
+CREATE TABLE furniture (id INTEGER PRIMARY KEY, name Text, quantity integer, available text, price integer);
+
+INSERT INTO furniture VALUES (1, "Sofas", 5, "YES", 3);
+INSERT INTO furniture VALUES (2, "TVs", 10, "YES", 34);
+INSERT INTO furniture VALUES (3, "tables", 32, "YES", 45);
+INSERT INTO furniture VALUES (4, "trashcans", 4, "NO", 43);
+INSERT INTO furniture VALUES (5, "chairs", 24, "YES", 98);
+INSERT INTO furniture VALUES (6, "refrigerators", 64, "NO", 7);
+INSERT INTO furniture VALUES (7, "microwaves", 44, "YES", 5);
+INSERT INTO furniture VALUES (8, "stoves", 3, "NO", 1);
+INSERT INTO furniture VALUES (9, "umbrellas", 18, "NO", 90);
+INSERT INTO furniture VALUES (10, "lamps", 23, "YES", 67);
+INSERT INTO furniture VALUES (11, "beds", 4, "YES", 78);
+INSERT INTO furniture VALUES(12, "DISHES", 45, "NO", 8);
+INSERT INTO furniture VALUES (13, "CUPS", 4, "NO", 94);
+INSERT INTO furniture VALUES (14, "GLASSES", 78, "YES", 45);
+INSERT INTO FURNITURE VALUES (15, "PLANTS", 8, "YES", 8);
+
+SELECT * FROM furniture WHERE price >0 ORDER BY price asc;
+SELECT MAX(quantity) FROM furniture;
